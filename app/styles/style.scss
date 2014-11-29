@@ -1,0 +1,58 @@
+$icon-font-path: "../styles/fonts/"; // Change the path to the fonts
+$banner-font: 'Dancing Script', cursive;
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+/* Put your CSS here */
+html, body {
+    margin: 30px 0;
+    background: url("../images/parchment-paper.jpg")no-repeat center center fixed;
+    background-size: cover;
+    background-height: 100%;
+    background-width: auto;
+}
+
+h1 {
+  margin-top: -60px;
+  padding-bottom: 60px;
+  background: url("../images/barnwood.jpg")no-repeat center;
+  background-size: cover;
+  background-height: 500px;
+  background-width: auto;
+  font-family: $banner-font;
+  font-size: 10em;
+  color: #D1EDFF;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+h2 {
+  margin-top: -55px;
+  font-family: Candara, Optima;
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+li {
+  display: inline-block;
+  margin-left: 35px;
+  margin-right: 35px;
+  list-style: none;
+  font-family: Candara, Optima;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
