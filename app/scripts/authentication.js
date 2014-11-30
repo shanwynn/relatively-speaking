@@ -1,4 +1,4 @@
-App.ApplicationController = Ember.Controller.extend({
+Relativelyspeaking.ApplicationController = Ember.Controller.extend({
     // used to show, or not show, the log out button
     isLoggedIn: false,
     // when a user enters the app unauthenticated, the transition
@@ -16,7 +16,7 @@ App.ApplicationController = Ember.Controller.extend({
 });
 
 
-App.ApplicationRoute = Ember.Route.extend({
+Relativelyspeaking.ApplicationRoute = Ember.Route.extend({
   beforeModel: function(transition) {
     var applicationController = this.controllerFor('application');
     if (localStorage.authToken) {
@@ -30,15 +30,15 @@ App.ApplicationRoute = Ember.Route.extend({
       this.controllerFor('application').logout();
       delete localStorage.authToken;
       this.transitionTo('login');
-      App.Firebase.unauth();
+      Relativelyspeaking.Firebase.unauth();
     }
   }
 });
 
-App.AuthenticatedRoute = Ember.Route.extend({
+Relativelyspeaking.AuthenticatedRoute = Ember.Route.extend({
   beforeModel: function(transition) {
     var applicationController = this.controllerFor('application');
-    if (localStorage.authToken !== App.Firebase.getAuth().token) {//Yay! actual verification
+    if (localStorage.authToken !== Relativelyspeaking.Firebase.getAuth().token) {//Yay! actual verification
       applicationController.set('savedTransition', transition);
       this.transitionTo('login');
     } else {
@@ -47,14 +47,14 @@ App.AuthenticatedRoute = Ember.Route.extend({
   }
 });
 
-App.LoginRoute = Ember.Route.extend({
+Relativelyspeaking.LoginRoute = Ember.Route.extend({
     actions: {
         login: function () {
             var loginController = this.controllerFor('login');
             var username = loginController.get('username');
             var password = loginController.get('password');
             var that = this;
-            App.Firebase.authWithPassword({
+            Relativelyspeaking.Firebase.authWithPassword({
                 email: username,
                 password: password
             }, function (error, authData) {
