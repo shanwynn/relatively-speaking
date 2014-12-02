@@ -1,4 +1,4 @@
-Relativelyspeaking.EditRecipeController = Ember.ObjectController.extend({
+Rs.RecipeEditController = Ember.ObjectController.extend({
   actions: {
     update: function () {
       this.model.save();

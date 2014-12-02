@@ -1,1 +1,1 @@
-Relativelyspeaking.ApplicationAdapter = DS.FixtureAdapter;
+Rs.ApplicationAdapter = DS.FixtureAdapter;
