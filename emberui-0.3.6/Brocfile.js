@@ -1,3 +1,8 @@
+app.import('vendor/velocity/jquery.velocity.js')
+app.import('vendor/twix/bin/twix.js')
+app.import('vendor/moment/moment.js')
+app.import('vendor/ember-listview/list-view.prod.js');
+
 var pickFiles = require('broccoli-static-compiler');
 var filterCoffeeScript  = require('broccoli-coffee');
 var filterTemplates     = require('broccoli-template');

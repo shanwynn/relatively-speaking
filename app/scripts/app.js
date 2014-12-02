@@ -2,7 +2,7 @@ var Rs = window.Rs = Ember.Application.create({
 LOG_TRANSITIONS: true
 });
 
-Rs.Firebase = new Firebase('https://dazzling-torch-1926.firebaseio.com');
+Rs.Firebase = new Firebase('https://relatively-speaking.firebaseIO.com');
 
 Rs.ApplicationAdapter = DS.FirebaseAdapter.extend({
 	firebase: Rs.Firebase
