@@ -1,5 +1,5 @@
 Rs.ContactsRoute = Ember.Route.extend({
-  model: function(params) {
+/*  model: function(params) {
     return this.store.find('contacts');
-  }
+  }*/
 });

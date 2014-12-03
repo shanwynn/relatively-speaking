@@ -1,16 +1,19 @@
-<h1>Relatively Speaking</h1>
-<h2>The Wynn Family Newsletter</h2>
-<div>
-  <ul class="Nav">
-    <li class="navbar" id="home">{{#link-to 'index'}}Home{{/link-to}}</li>
-    <li class="navbar" id="news">News/Announcements</li>
-    <li class="navbar" id="events">Events</li>
-    <li class="navbar" id="b-a">Birthdays/Anniversaries</li>
-    <li class="navbar" id="contacts">Contacts</li>
-    <li class="navbar" id="recipes">Recipes</li>
-    <li class="navbar" id="feedback">Feedback</li>
-  </ul>
+<header>
+  <h1>Relatively Speaking</h1>
+  <h2>The Wynn Family Newsletter</h2>
+  <nav>
+    <ul class="Nav">
+      <li class="navbar" id="home">{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li class="navbar" id="news">{{#link-to 'news'}}News/Announcements{{/link-to}}</li>
+      <li class="navbar" id="events">{{#link-to 'events'}}Events{{/link-to}}</li>
+      <li class="navbar" id="b-a">{{#link-to 'bdayanniv'}}Birthdays/Anniversaries{{/link-to}}</li>
+      <li class="navbar" id="contacts">{{#link-to 'contacts'}}Contacts{{/link-to}}</li>
+      <li class="navbar" id="recipes">{{#link-to 'recipes'}}Recipes{{/link-to}}</li>
+      <li class="navbar" id="feedback">{{#link-to 'feedback'}}Feedback{{/link-to}}</li>
+    </ul>
+  </nav>
+</header>
 
-</div>
+{{outlet}}
 
 <footer></footer>

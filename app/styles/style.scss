@@ -47,6 +47,7 @@ h2 {
 }
 
 p {
+  margin-top: 0;
   text-align: center;
 }
 
@@ -64,7 +65,7 @@ p {
 
 .navbar {
   display: inline-block;
-  margin: 0 35px 0 35px;
+  margin: 0 20px 0 20px;
   list-style: none;
   font-family: Candara, Optima;
   font-size: 1.5em;
@@ -75,7 +76,7 @@ p {
 
 .navbar a {
   display: inline-block;
-  margin: 2px 35px 0 35px;
+  margin: 0 20px 0 20px;
   list-style: none;
   font-family: Candara, Optima;
   font-size: 1.0em;
@@ -87,7 +88,7 @@ p {
 
 .navbar a:hover {
   display: inline-block;
-  margin: 2px 35px 0 35px;
+  margin: 0 20px 0 20px;
   list-style: none;
   font-family: Candara, Optima;
   font-size: 1.0em;

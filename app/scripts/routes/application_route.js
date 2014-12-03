@@ -1,5 +1,3 @@
-Rs.ApplicationRoute = Rs.ApplicationRoute.extend({
-  model: function() {
-    return this.store.find('index');
-  }
-});
+/*Rs.ApplicationRoute = Rs.ApplicationRoute.extend({
+
+});*/
