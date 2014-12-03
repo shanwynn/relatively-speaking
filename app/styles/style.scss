@@ -23,7 +23,7 @@ html, body {
     background-width: auto;
 }
 
-h1 {
+#title {
   margin-top: -60px;
   padding-bottom: 60px;
   background: url("../images/barnwood.jpg")no-repeat center;
@@ -47,11 +47,16 @@ h2 {
 }
 
 p {
-  margin-top: 0;
+  font-size: 2em;
   text-align: center;
+  margin: 100px auto 0 auto;
+  width: 60%;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.60);
 }
 
-.Nav {
+.nav-bkgd {
   width: 100%;
   height: 35px;
   float: left;
@@ -94,6 +99,6 @@ p {
   font-size: 1.0em;
   font-weight: bold;
   text-align: center;
-  color: #E9F3FF;
+  color: #F2D3BA;
   text-decoration: none;
 }
