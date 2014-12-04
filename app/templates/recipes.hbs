@@ -1,1 +1,27 @@
 <p>Our family loves to eat. This is the place for recipes.</p>
+
+  <article>
+  <form role="form">
+     <div class="form-group">
+       <label for='name'>Recipe Name:</label>
+       {{input type='text' value=name id='name' class='form-control'}}
+     </div>
+     <div class="form-group">
+        <label for='category'>Category:</label>
+        {{view "select" value=category content=App.CATEGORIES optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control'}}
+     </div>
+     <div class="form-group">
+       <label for='imageURL'>Image (URL):</label>
+       {{input type='text' value=imageURL id='imageURL' class='form-control'}}
+     </div>
+    <div class="form-group">
+      <label for='ingredients'>Ingredients:</label>
+       {{input type='text' value=ingredients id='ingredients' class='form-control'}}
+    </div>
+    <div class ="form-group">
+    <label for='directions'>Directions:</label>
+       {{input type='text' value=directions id='directions' class='form-control'}}
+    </div>
+    <button class='btn btn-primary' {{action 'save'}}>Add Recipe</button>
+  </form>
+  </article>

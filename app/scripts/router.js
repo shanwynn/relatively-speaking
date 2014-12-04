@@ -10,5 +10,4 @@ Rs.Router.map(function () {
   this.route('category', {path: 'categories'});
   this.route('feedback');
   this.route ('login', {path: 'login'});
-
 });
