@@ -1,9 +1,7 @@
-Rs.RecipeController = Ember.ObjectController.extend({
-  ingredientCount: Ember.computed.alias('splitIngredients.length'),
-  directionCount: Ember.computed.alias('splitDirections.length'),
+Rs.RecipeController = Ember.Controller.extend({
 
-  showIngredients: true,
-  showDirections: true,
+/*  showIngredients: true,
+  showDirections: true,*/
 
   splitDirections: function () {
     return this.get('directions').split(',');
@@ -13,18 +11,22 @@ Rs.RecipeController = Ember.ObjectController.extend({
     return this.get('ingredients').split(',');
   }.property('ingredients'),
 
-  categoryName: function () {
-    var category = Rs.CATEGORIES.findBy('id', this.get('category'));
-    if (category)
-      return category.name;
-  }.property('category'),
-
   actions: {
     toggleDirections: function() {
       this.toggleProperty('showDirections');
     },
     toggleIngredients: function () {
       this.toggleProperty('showIngredients');
+    },
+    save: function() {
+      var recipe = this.store.createRecord('news', {
+        name:        this.get('name'),
+        category:    this.get('category'),
+        imageURL:    this.get('imageURL'),
+        ingredients: this.get('ingredients'),
+        directions:  this.get('directions')
+      });
+        recipe.save();
     },
     destroy: function () {
       if (confirm('Are you sure you want to delete this recipe?')) {

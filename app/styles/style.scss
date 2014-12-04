@@ -1,5 +1,5 @@
 $icon-font-path: "../styles/fonts/"; // Change the path to the fonts
-$banner-font: 'Dancing Script', script;
+$banner-font:'Dancing Script', script;
 @import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
 
 @mixin border-radius($radius) {
