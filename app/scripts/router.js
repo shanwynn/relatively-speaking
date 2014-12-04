@@ -9,5 +9,6 @@ Rs.Router.map(function () {
   this.route('new_recipe', {path: 'recipes/new'});
   this.route('category', {path: 'categories'});
   this.route('feedback');
+  this.route ('login', {path: 'login'});
 
 });

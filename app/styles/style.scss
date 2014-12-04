@@ -23,7 +23,7 @@ html, body {
     background-width: auto;
 }
 
-#title {
+#banner {
   margin-top: -60px;
   padding-bottom: 60px;
   background: url("../images/barnwood.jpg")no-repeat center;
@@ -49,7 +49,7 @@ h2 {
 p {
   font-size: 2em;
   text-align: center;
-  margin: 100px auto 0 auto;
+  margin: 60px auto 0 auto;
   width: 60%;
   border-radius: 6px;
   padding: 20px;
@@ -68,6 +68,20 @@ article {
   margin-left: 70px;
   margin-top: 30px;
   width: 80%;
+}
+
+#loginbtn {
+margin-left: 0;
+margin-top: -5px;
+background-color: #10206F;
+border: #10206F;
+color: #fff;
+font-size: 1em;
+}
+
+.login-form {
+  margin-left: 30px;
+  width: 300px;
 }
 
 .btn-primary {
