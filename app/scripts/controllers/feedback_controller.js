@@ -1,8 +1,4 @@
 Rs.FeedbackController = Ember.ObjectController.extend({
-  markedText: function () {
-    return marked(this.get('text') || '');
-  }.property('text'),
-
   actions: {
     save: function () {
       if (!this.get('text')) { return;}

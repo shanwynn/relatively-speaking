@@ -1,1 +1,13 @@
-<p>Feedback. Don't be shy, let me know what you think.</p>
+<p>Feedback and comments are welcome!</p>
+  <div class='preview'>
+  {{name}}
+  </div>
+  <article>
+    <form>
+      <div class='form-group'>
+        <label for='text'>Feedback:</label>
+        {{textarea value=text id='text' class='form-control' rows='5'}}
+      </div>
+      <button class='btn btn-primary' {{action 'save'}}>Add Comment</button>
+    </form>
+  </article>

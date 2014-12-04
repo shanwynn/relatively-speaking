@@ -3,7 +3,5 @@ Rs.Feedback = DS.Model.extend({
   date: DS.attr('string'),
   text: DS.attr('string'),
   markedText: function () {
-    return marked(this.get('text') || '');
-  }.property('text'),
-  feedback: DS.belongsTo('feedback', {async: true})
+  }
 });
