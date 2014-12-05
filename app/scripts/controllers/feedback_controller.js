@@ -9,7 +9,7 @@ Rs.FeedbackController = Ember.Controller.extend({
          text: this.get('text')
        });
        feedback.save();
-       this.transitionToRoute('index');
+       this.transitionToRoute('feedback');
     }
   }
 });

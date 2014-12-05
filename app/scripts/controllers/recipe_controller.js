@@ -1,7 +1,7 @@
 Rs.RecipeController = Ember.Controller.extend({
 
-/*  showIngredients: true,
-  showDirections: true,*/
+  showIngredients: true,
+  showDirections: true,
 
   splitDirections: function () {
     return this.get('directions').split(',');
@@ -19,7 +19,7 @@ Rs.RecipeController = Ember.Controller.extend({
       this.toggleProperty('showIngredients');
     },
     save: function() {
-      var recipe = this.store.createRecord('news', {
+      var recipe = this.store.createRecord('recipe', {
         name:        this.get('name'),
         category:    this.get('category'),
         imageURL:    this.get('imageURL'),

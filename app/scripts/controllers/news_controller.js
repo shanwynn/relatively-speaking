@@ -6,7 +6,7 @@ Rs.NewsController = Ember.Controller.extend({
         post:        this.get('post'),
         imageURL:    this.get('imageURL'),
       });
-        news.save();
+      news.save();
       this.transitionToRoute('news');
     }
   }

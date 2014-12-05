@@ -6,7 +6,7 @@ Rs.EventController = Ember.Controller.extend({
         date:     this.get('date'),
         post:     this.get('post'),
       });
-        event.save();
+      event.save();
       this.transitionToRoute('events');
     }
   }
