@@ -1,12 +1,13 @@
-Rs.EventController = Ember.Controller.extend({
+Rs.EventsController = Ember.Controller.extend({
   actions: {
     save: function() {
-      var event = this.store.createRecord('event', {
+      var eventRecord = this.store.createRecord('event', {
         title:    this.get('title'),
         date:     this.get('date'),
+        time:     this.get('time'),
         post:     this.get('post'),
       });
-      event.save();
+      eventRecord.save();
       this.transitionToRoute('events');
     }
   }

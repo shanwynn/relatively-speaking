@@ -15,6 +15,13 @@ require('scripts/authentication');
 Rs.CATEGORIES = [
 	{ id: '1', name: 'Main Dish'},
 	{ id: '2', name: 'Side Dish'},
-	{ id: '3', name: 'Bread'},
-	{ id: '4', name: 'Dessert'}
+	{ id: '3', name: 'Meat'},
+	{ id: '4', name: 'Casseroles'},
+	{ id: '5', name: 'Bread'},
+	{ id: '6', name: 'Dessert'}
+];
+
+Rs.FORMWIZARD = [
+	{ id: '1', name: 'Yes'},
+	{ id: '2', name: 'No'}
 ];

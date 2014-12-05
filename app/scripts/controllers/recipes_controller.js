@@ -1,4 +1,4 @@
-Rs.RecipeController = Ember.Controller.extend({
+Rs.RecipesController = Ember.Controller.extend({
 
   showIngredients: true,
   showDirections: true,
@@ -19,14 +19,14 @@ Rs.RecipeController = Ember.Controller.extend({
       this.toggleProperty('showIngredients');
     },
     save: function() {
-      var recipe = this.store.createRecord('recipe', {
+      var recipeRecord = this.store.createRecord('recipe', {
         name:        this.get('name'),
         category:    this.get('category'),
         imageURL:    this.get('imageURL'),
         ingredients: this.get('ingredients'),
         directions:  this.get('directions')
       });
-        recipe.save();
+      recipeRecord.save();
     },
     destroy: function () {
       if (confirm('Are you sure you want to delete this recipe?')) {
