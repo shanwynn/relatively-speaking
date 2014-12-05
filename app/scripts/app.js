@@ -22,6 +22,6 @@ Rs.CATEGORIES = [
 ];
 
 Rs.FORMWIZARD = [
-	{ id: '1', name: 'Yes'},
-	{ id: '2', name: 'No'}
+	{ id: true, name: 'Yes'},
+	{ id: false, name: 'No'}
 ];
