@@ -36,7 +36,7 @@
        {{view "select" value=spouse content=Rs.FORMWIZARD optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control'}}
     </div>
     <div class="form-group">
-       <label for='children'>Do you have children (minors)?:</label>
+       <label for='children'>Do you have children in your household?:</label>
        {{view "select" value=children content=Rs.FORMWIZARD optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control'}}
     </div>
     <button class='btn btn-primary' {{action 'save'}}>Add Contact Info</button>

@@ -2,20 +2,10 @@
 
 <div>
   <article>
-  <form role="form">
-     <div class="form-group">
-       <label for='title'>Headline:</label>
-       {{input type='text' value=title id='title' class='form-control'}}
-     </div>
-     <div class="form-group">
-        <label for='post'>What is your news?:</label>
-        {{input type='text' value=post id='post' class='form-control'}}
-     </div>
-     <div class="form-group">
-       <label for='imageURL'>Please link photos here:</label>
-       {{input type='text' value=imageURL id='imageURL' class='form-control'}}
-     </div>
-     <button class='btn btn-primary' {{action 'save'}}>Post News</button>
-  </form>
+  <h2>{{title}}</h2>
+    <p class='text-output'>{{post}}</p>
+    <p><img {{bind-attr src=imageUrl}} /></p>
+    {{outlet}}
+  {{link-to "Add News" "new_news" class='btn btn-primary'}}
   </article>
 </div>
