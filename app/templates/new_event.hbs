@@ -1,0 +1,26 @@
+<p>Let's all get together! Share a family event.</p>
+
+<div>
+  <article>
+  <form role="form">
+     <div class="form-group">
+       <label for='title'>Event:</label>
+       {{input type='text' value=title id='title' class='form-control'}}
+     </div>
+     <div class="form-group">
+       <label for='date'>Date:</label>
+       {{input type='date' value=date id='date' class='form-control'}}
+     </div>
+     <div class="form-group">
+       <label for='time'>Time:</label>
+       {{input type='time' value=time id='time' class='form-control'}}
+     </div>
+     <div class="form-group">
+       <label for='post'>Event Details:</label>
+       {{input type='text' value=post id='post' class='form-control'}}
+     </div>
+
+     <button class='btn btn-primary' {{action 'save'}}>Post Event</button>
+  </form>
+  </article>
+</div>

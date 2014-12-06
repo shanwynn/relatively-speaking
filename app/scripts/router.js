@@ -5,6 +5,8 @@ Rs.Router.map(function () {
   this.route('new_comment', {path: 'news/:id/new_comment'});
 
   this.route('events');
+  this.route('new_event', {path: 'event/new'});
+
   this.route('bdayanniv');
   this.route('contacts');
   this.route('recipes');

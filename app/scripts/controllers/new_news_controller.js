@@ -1,19 +1,19 @@
 Rs.NewNewsController = Ember.Controller.extend({
-    actions : {
+    actions: {
         save: function () {
-            if(!this.get('title')) {
+            if(!this.get('newsTitle')) {
               this.set('errors', 'Title can not be blank.');
               return;
             }
-            if(!this.get('post')) {
+            if(!this.get('newsPost')) {
               this.set('errors', 'Post can not be blank.');
               return;
             }
 
             var newsRecord = this.store.createRecord('news', {
-              title:       this.get('title'),
-              post:        this.get('post'),
-              imageURL:    this.get('imageURL'),
+              newsTitle:       this.get('newsTitle'),
+              newsPost:        this.get('newsPost'),
+              imageURL:        this.get('imageURL'),
             });
             newsRecord.save();
             this.transitionToRoute('news');

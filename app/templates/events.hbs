@@ -2,25 +2,10 @@
 
 <div>
   <article>
-  <form role="form">
-     <div class="form-group">
-       <label for='title'>Event:</label>
-       {{input type='text' value=title id='title' class='form-control'}}
-     </div>
-     <div class="form-group">
-       <label for='date'>Date:</label>
-       {{input type='date' value=date id='date' class='form-control'}}
-     </div>
-     <div class="form-group">
-       <label for='time'>Time:</label>
-       {{input type='time' value=time id='time' class='form-control'}}
-     </div>
-     <div class="form-group">
-       <label for='post'>Event Details:</label>
-       {{input type='text' value=post id='post' class='form-control'}}
-     </div>
-
-     <button class='btn btn-primary' {{action 'save'}}>Post Event</button>
-  </form>
+  <h2>{{title}}</h2>
+  <h3>{{date}}</h3>
+  <h3>{{time}}</h3>
+    <p class='text-output'>{{post}}</p>
+  {{link-to "New Event" "new_event" class='btn btn-primary'}}
   </article>
 </div>

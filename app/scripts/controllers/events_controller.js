@@ -1,14 +1,9 @@
 Rs.EventsController = Ember.Controller.extend({
   actions: {
-    save: function() {
-      var eventRecord = this.store.createRecord('event', {
-        title:    this.get('title'),
-        date:     this.get('date'),
-        time:     this.get('time'),
-        post:     this.get('post'),
-      });
-      eventRecord.save();
-      this.transitionToRoute('events');
+        destroy: function () {
+                this.get('model').deleteRecord();
+                this.get('model').save();
+                this.transitionToRoute('events');
     }
   }
 });

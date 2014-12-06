@@ -1,5 +1,5 @@
 Rs.News = DS.Model.extend({
-  title:       DS.attr('string'),
-  post:        DS.attr('string'),
+  newsTitle:       DS.attr('string'),
+  newsPost:        DS.attr('string'),
   imageURL:    DS.attr('string')
 });

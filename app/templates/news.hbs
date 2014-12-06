@@ -2,10 +2,9 @@
 
 <div>
   <article>
-  <h2>{{title}}</h2>
-    <p class='text-output'>{{post}}</p>
+  <h2>{{newsTitle}}</h2>
+    <p class='text-output'>{{newsPost}}</p>
     <p><img {{bind-attr src=imageUrl}} /></p>
-    {{outlet}}
   {{link-to "Add News" "new_news" class='btn btn-primary'}}
   </article>
 </div>
