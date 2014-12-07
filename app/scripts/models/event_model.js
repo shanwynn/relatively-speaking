@@ -1,6 +1,6 @@
 Rs.Event = DS.Model.extend({
-  title: DS.attr('string'),
-  date: DS.attr('string'),
-  time: DS.attr('string'),
-  post: DS.attr('string')
+  eventTitle: DS.attr('string'),
+  eventDate:  DS.attr('string'),
+  eventTime:  DS.attr('string'),
+  eventPost:  DS.attr('string')
 });

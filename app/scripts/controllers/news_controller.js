@@ -4,6 +4,6 @@ Rs.NewsController = Ember.Controller.extend({
             this.get('model').deleteRecord();
             this.get('model').save();
             this.transitionToRoute('news');
-        }
+    }
   }
 });

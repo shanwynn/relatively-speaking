@@ -2,28 +2,31 @@
 
 <div>
   <article>
-  <form role="form">
-     <div class="form-group">
-       <label for='name'>Recipe Name:</label>
-       {{input type='text' value=name id='name' class='form-control'}}
-     </div>
-     <div class="form-group">
-        <label for='category'>Category:</label>
-        {{view "select" value=category content=Rs.CATEGORIES optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control'}}
-     </div>
-     <div class="form-group">
-       <label for='imageURL'>Image (URL):</label>
-       {{input type='text' value=imageURL id='imageURL' class='form-control'}}
-     </div>
-    <div class="form-group">
-      <label for='ingredients'>Ingredients:</label>
-       {{input type='text' value=ingredients id='ingredients' class='form-control'}}
-    </div>
-    <div class ="form-group">
-    <label for='directions'>Directions:</label>
-       {{input type='text' value=directions id='directions' class='form-control'}}
-    </div>
-    <button class='btn btn-primary' {{action 'save'}}>Add Recipe</button>
-  </form>
+      <h2>{{recipeName}}</h2>
+      <h4 class='category'>{{category}}</h4>
+    <section>
+      <img {{bind-attr src=imageURL}} class='centered' />
+      <h4 class="add-form"{{action 'toggleIngredients' on 'click'}}>
+        {{ingredientCount}} Ingredients <i {{bind-attr class=':glyphicon showIngredients:glyphicon-chevron-down:glyphicon-chevron-up'}}></i>
+      </h4>
+      {{#if showIngredients}}
+      <ul>
+        {{#each ingredient in splitIngredients}}
+        <li>{{ingredient}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      <h4 class="add-form" {{action 'toggleDirections' on 'click'}}>
+        {{directionCount}} Directions <i {{bind-attr class=':glyphicon showDirections:glyphicon-chevron-down:glyphicon-chevron-up'}}></i>
+      </h4>
+      {{#if showDirections}}
+      <ul>
+        {{#each direction in splitDirections}}
+        <li>{{direction}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    </section>
+    {{link-to "Add Recipe" "new_recipe" class='btn btn-primary'}}
   </article>
 </div>
