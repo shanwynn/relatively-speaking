@@ -1,4 +1,4 @@
-<p>Go here to {{link-to "Add News" "new_news" class='btn btn-primary'}}. Sharing is caring.
+<p>Go here to {{link-to "Add News" "new_news" class='btn btn-primary header-btn'}}. Sharing is caring.
 </p>
 
 <div>
@@ -7,6 +7,7 @@
     <div class='wrapper'>
         <h2 class='entry-title'>{{newsTitle}}</h2>
         <h3 class='text-output'>{{newsPost}}</h3>
+        <div><img {{bind-attr src=newsimageURL}} /></div>
     </div>
     {{/each}}
   </article>

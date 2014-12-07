@@ -1,12 +1,14 @@
-<p>Let's all get together! Create a {{link-to "New Event" "new_event" class='btn btn-primary'}} right here.</p>
+<p>Let's all get together! Create a {{link-to "New Event" "new_event" class='btn btn-primary header-btn'}} right here.</p>
 
 <div>
   <article>
-  {{#each}}
-    <h2>{{eventTitle}}</h2>
-    <h3>{{eventDate}}</h3>
-    <h3>{{eventTime}}</h3>
-    <p class='text-output'>{{eventPost}}</p>
-  {{/each}}
+    {{#each}}
+    <div class='wrapper'>
+      <h2>{{eventTitle}}</h2>
+      <h3>{{eventDate}}</h3>
+      <h3>{{eventTime}}</h3>
+      <p class='text-output'>{{eventPost}}</p>
+    </div>
+    {{/each}}
   </article>
 </div>

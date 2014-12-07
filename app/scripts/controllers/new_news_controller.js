@@ -13,7 +13,7 @@ Rs.NewNewsController = Ember.Controller.extend({
             var newsRecord = this.store.createRecord('news', {
               newsTitle:       this.get('newsTitle'),
               newsPost:        this.get('newsPost'),
-              imageURL:        this.get('imageURL'),
+              newsimageURL:    this.get('newsimageURL')
             });
             newsRecord.save();
             this.transitionToRoute('news');

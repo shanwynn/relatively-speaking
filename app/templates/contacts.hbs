@@ -1,4 +1,4 @@
-<p>Tell us a little about yourself.</p>
+<p>Step 1. Tell us a little bit about yourself.</p>
 
 <div>
   <article>
@@ -21,7 +21,7 @@
      </div>
      <div class="form-group">
        <label for='phone'>Phone:</label>
-       {{input type='tel' value=telephone id='telephone' class='form-control'}}
+       {{input type='tel' value=phone id='phone' class='form-control'}}
      </div>
     <div class ="form-group">
       <label for='email'>Email:</label>
@@ -31,6 +31,10 @@
       <label for='webaddress'>Web Address:</label>
        {{input type='text' value=webaddress id='webaddress' class='form-control'}}
     </div>
+    <div class ="form-group">
+      <label for='familyphoto'>Link to Family Photo:</label>
+       {{input type='text' value=familyphoto id='familyphoto' class='form-control'}}
+    </div>
     <div class="form-group">
        <label for='spouse'>Are you currently married?:</label>
        {{view "select" value=spouse content=Rs.FORMWIZARD optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control'}}
@@ -39,7 +43,103 @@
        <label for='children'>Do you have children in your household?:</label>
        {{view "select" value=children content=Rs.FORMWIZARD optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control'}}
     </div>
-    <button class='btn btn-primary' {{action 'save'}}>Add Contact Info</button>
+    <div class ="form-group">
+      <label for='firstnameSpouse'>Spouse's First Name:</label>
+       {{input type='text' value=firstnameSpouse id='firstnameSpouse' class='form-control'}}
+    </div>
+    <div class ="form-group">
+      <label for='lastnameSpouse'>Spouse's Last Name:</label>
+       {{input type='text' value=lastnameSpouse id='lastnameSpouse' class='form-control'}}
+    </div>
+    <div class ="form-group">
+      <label for='birthdateSpouse'>Spouse's Birthdate:</label>
+       {{input type='date' value=birthdateSpouse id='birthdateSpouse' class='form-control'}}
+    </div>
+    <div class ="form-group">
+      <label for='anniversary'>Anniversary:</label>
+       {{input type='date' value=anniversary id='anniversary' class='form-control'}}
+    </div>
+    <div class ="form-group">
+      <label for='emailSpouse'>Spouse's Email:</label>
+       {{input type='text' value=emailSpouse id='emailSpouse' class='form-control'}}
+    </div>
+    <div class ="form-group">
+      <label for='webSpouse'>Spouse's Web Address:</label>
+       {{input type='text' value=webSpouse id='webSpouse' class='form-control'}}
+    </div>
+    <div class ="form-group">
+      <label for='firstnameChild1'>Child's First Name:</label>
+       {{input type='text' value=firstnameChild1 id='firstnameChild1' class='form-control'}}
+    </div>
+    <div class ="form-group">
+    <label for='lastnameChild1'>Child's Last Name:</label>
+     {{input type='text' value=lastnameChild1 id='lastnameChild1' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='birthdateChild1'>Child's Birthdate:</label>
+      {{input type='date' value=birthdateChild1 id='birthdateChild1' class='form-control'}}
+    </div>
+    <div class ="form-group">
+    <label for='firstnameChild2'>Child's First Name:</label>
+     {{input type='text' value=firstnameChild2 id='firstnameChild2' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='lastnameChild2'>Child's Last Name:</label>
+      {{input type='text' value=lastnameChild2 id='lastnameChild2' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='birthdateChild2'>Child's Birthdate:</label>
+      {{input type='date' value=birthdateChild2 id='birthdateChild2' class='form-control'}}
+    </div>
+    <div class ="form-group">
+    <label for='firstnameChild3'>Child's First Name:</label>
+     {{input type='text' value=firstnameChild3 id='firstnameChild3' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='lastnameChild3'>Child's Last Name:</label>
+      {{input type='text' value=lastnameChild3 id='lastnameChild3' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='birthdateChild3'>Child's Birthdate:</label>
+      {{input type='date' value=birthdateChild3 id='birthdateChild3' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='firstnameChild4'>Child's First Name:</label>
+      {{input type='text' value=firstnameChild4 id='firstnameChild4' class='form-control'}}
+    </div>
+    <div class ="form-group">
+    <label for='lastnameChild4'>Child's Last Name:</label>
+     {{input type='text' value=lastnameChild4 id='lastnameChild4' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='birthdateChild4'>Child's Birthdate:</label>
+      {{input type='date' value=birthdateChild4 id='birthdateChild4' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='firstnameChild5'>Child's First Name:</label>
+      {{input type='text' value=firstnameChild5 id='firstnameChild5' class='form-control'}}
+    </div>
+    <div class ="form-group">
+    <label for='lastnameChild5'>Child's Last Name:</label>
+     {{input type='text' value=lastnameChild5 id='lastnameChild5' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='birthdateChild5'>Child's Birthdate:</label>
+      {{input type='date' value=birthdateChild5 id='birthdateChild5' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='firstnameChild6'>Child's First Name:</label>
+      {{input type='text' value=firstnameChild6 id='firstnameChild6' class='form-control'}}
+    </div>
+    <div class ="form-group">
+    <label for='lastnameChild6'>Child's Last Name:</label>
+     {{input type='text' value=lastnameChild6 id='lastnameChild6' class='form-control'}}
+    </div>
+    <div class ="form-group">
+     <label for='birthdateChild6'>Child's Birthdate:</label>
+      {{input type='date' value=birthdateChild6 id='birthdateChild6' class='form-control'}}
+    </div>
+      <button class='btn btn-primary' {{action 'save'}}>Add Contact Info</button>
   </form>
   </article>
 </div>
