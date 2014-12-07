@@ -3,9 +3,12 @@
 
 <div>
   <article>
-  {{#each}}
-    <h3>{{text}}<br>{{name}}</h3>
-    <h4 class="date-text">{{date}}</h4>
-  {{/each}}
+    {{#each}}
+    <div class='wrapper'>
+      <h3>{{text}}</h3>
+      <h3>{{name}}</h3>
+      <h4 class="date-text">{{date}}</h4>
+    {{/each}}
+    </div>
   </article>
 </div>
