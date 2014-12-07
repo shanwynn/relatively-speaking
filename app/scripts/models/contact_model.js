@@ -13,8 +13,6 @@ Rs.Contact = DS.Model.extend({
   lastnameSpouse:   DS.attr('string'),
   birthdateSpouse:  DS.attr('string'),
   anniversary:      DS.attr('string'),
-  emailSpouse:      DS.attr('string'),
-  webSpouse:        DS.attr('string'),
   firstnameChild1:  DS.attr('string'),
   lastnameChild1:   DS.attr('string'),
   birthdateChild1:  DS.attr('string'),
@@ -26,11 +24,6 @@ Rs.Contact = DS.Model.extend({
   birthdateChild3:  DS.attr('string'),
   firstnameChild4:  DS.attr('string'),
   lastnameChild4:   DS.attr('string'),
-  birthdateChild4:  DS.attr('string'),
-  firstnameChild5:  DS.attr('string'),
-  lastnameChild15:  DS.attr('string'),
-  birthdateChild5:  DS.attr('string'),
-  firstnameChild6:  DS.attr('string'),
-  lastnameChild6:   DS.attr('string'),
-  birthdateChild6:  DS.attr('string')
+  birthdateChild4:  DS.attr('string')
+
 });

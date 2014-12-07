@@ -110,9 +110,48 @@ article {
 }
 
 .form-group {
-  margin-left: 70px;
+  margin-left: 10px;
   margin-top: 30px;
-  width: 80%;
+  width: 100%;
+}
+
+.fullname {
+  display: inline-block;
+  width: 250px;
+}
+
+.birthday {
+  display: inline-block;
+  width: 200px;
+}
+
+.mailingaddress {
+  width: 700px;
+}
+
+.contact-methods {
+  display: inline-block;
+  width: 300px;
+}
+
+.weblinks {
+  display: inline-block;
+  width: 300px;
+}
+
+.statuses {
+  display: inline-block;
+  width: 80px;
+}
+
+.child-info {
+  display: inline-block;
+  width: 150px;
+}
+
+.childbirthdate {
+  display: inline-block;
+  width: 175px;
 }
 
 img {

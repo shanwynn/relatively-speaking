@@ -16,8 +16,6 @@ Rs.ContactsController = Ember.Controller.extend({
         lastnameSpouse:   this.get('lastnameSpouse'),
         birthdateSpouse:  this.get('birthdateSpouse'),
         anniversary:      this.get('anniversary'),
-        emailSpouse:      this.get('emailSpouse'),
-        webSpouse:        this.get('webSpouse'),
         firstnameChild1:  this.get('firstnameChild1'),
         lastnameChild1:   this.get('lastnameChild1'),
         birthdateChild1:  this.get('birthdateChild1'),
@@ -29,13 +27,7 @@ Rs.ContactsController = Ember.Controller.extend({
         birthdateChild3:  this.get('birthdateChild3'),
         firstnameChild4:  this.get('firstnameChild4'),
         lastnameChild4:   this.get('lastnameChild4'),
-        birthdateChild4:  this.get('birthdateChild4'),
-        firstnameChild5:  this.get('firstnameChild5'),
-        lastnameChild15:  this.get('lastnameChild15'),
-        birthdateChild5:  this.get('birthdateChild5'),
-        firstnameChild6:  this.get('firstnameChild6'),
-        lastnameChild6:   this.get('lastnameChild6'),
-        birthdateChild6:  this.get('birthdateChild6')
+        birthdateChild4:  this.get('birthdateChild4')
       });
       contactRecord.save();
       this.transitionToRoute('contacts');
