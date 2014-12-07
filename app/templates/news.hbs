@@ -1,18 +1,11 @@
-<p>This is a place to share family news. Sharing is caring.</p>
+<p>Go here to {{link-to "Add News" "new_news" class='btn btn-primary'}}. Sharing is caring.
+</p>
 
 <div>
   <article>
-    {{link-to "Add News" "new_news" class='btn btn-primary'}}
     {{#each}}
-      <article class="inside_textbox">
-        <h2 class='form-title'>{{newsTitle}}</h2>
-      </article>
-      <article class="inside_textbox">
+        <p class='entry-title'>{{newsTitle}}</p>
         <h3 class='text-output'>{{newsPost}}</h3>
-      </article>
-      <article class="inside_textbox">
-        <p><img {{bind-attr src=imageUrl}} /></p>
-      </article>
     {{/each}}
   </article>
 </div>

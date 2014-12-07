@@ -48,7 +48,12 @@ h2 {
 
 h3 {
   margin-left: 50px;
-  font-size: 1em;
+  font-size: 1.25em;
+  margin: 20px auto 0 auto;
+  width: 60%;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.60);
 }
 
 p {
@@ -67,6 +72,18 @@ article {
   border-radius: 6px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.75);
+}
+
+.entry-title {
+  font-size: 2em;
+  color: #10206F;
+  text-align: center;
+  text-shadow: none;
+  margin: 60px auto 0 auto;
+  width: 50%;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.60);
 }
 
 .form-title {
@@ -105,7 +122,7 @@ font-size: 1em;
 }
 
 .btn-primary {
-  margin-left: 70px;
+  margin-top: -5px;
   background-color: #10206F;
   border: #10206F;
   color: #fff;
@@ -113,7 +130,7 @@ font-size: 1em;
 }
 
 .btn-primary:hover {
-  margin-left: 70px;
+  margin-top: -5px;
   background-color: #2845D2;
   border: #2845D2;
   color: #fff;
