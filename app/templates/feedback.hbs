@@ -1,10 +1,11 @@
-<p>Feedback and comments are welcome!</p>
+<p>Feedback is welcome, feel free to create a {{link-to "New Comment" "new_feedback" class='btn btn-primary'}}
+.</p>
 
 <div>
   <article>
-  <h2>{{feedback}}</h2>
-  <h3>{{name}}</h3>
-  <h3>{{date}}</h3>
-  {{link-to "New Comment" "new_feedback" class='btn btn-primary'}}
+  {{#each}}
+    <h3>{{text}}<br>{{name}}</h3>
+    <h4 class="date-text">{{date}}</h4>
+  {{/each}}
   </article>
 </div>

@@ -50,10 +50,16 @@ h3 {
   margin-left: 50px;
   font-size: 1.25em;
   margin: 20px auto 0 auto;
-  width: 60%;
+  width: 80%;
   border-radius: 6px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.60);
+}
+
+h4 {
+  margin: 10px 150px 10px 100px;
+  padding-bottom: 25px;
+  font-weight: normal;
 }
 
 p {
@@ -67,15 +73,18 @@ p {
 }
 
 article {
-  margin: 20px auto 0 auto;
+  margin: 20px auto 20px auto;
   width: 60%;
   border-radius: 6px;
   padding: 20px;
+  padding-bottom: 40px;
   background-color: rgba(255, 255, 255, 0.75);
 }
 
 .entry-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;
+  font-weight: bold;
   color: #10206F;
   text-align: center;
   text-shadow: none;
@@ -91,6 +100,13 @@ article {
   font-size: 2em;
   color: #000;
   text-shadow: none;
+}
+
+.date-text {
+  float: right;
+  margin-top: -20px;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .form-group {
