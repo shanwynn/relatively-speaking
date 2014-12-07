@@ -1,4 +1,4 @@
-Rs.NewsController = Ember.Controller.extend({
+Rs.NewsController = Ember.ArrayController.extend({
   actions: {
     destroy: function () {
             this.get('model').deleteRecord();

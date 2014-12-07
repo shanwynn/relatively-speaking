@@ -2,9 +2,17 @@
 
 <div>
   <article>
-  <h2>{{newsTitle}}</h2>
-    <p class='text-output'>{{newsPost}}</p>
-    <p><img {{bind-attr src=imageUrl}} /></p>
-  {{link-to "Add News" "new_news" class='btn btn-primary'}}
+    {{link-to "Add News" "new_news" class='btn btn-primary'}}
+    {{#each}}
+      <article class="inside_textbox">
+        <h2 class='form-title'>{{newsTitle}}</h2>
+      </article>
+      <article class="inside_textbox">
+        <h3 class='text-output'>{{newsPost}}</h3>
+      </article>
+      <article class="inside_textbox">
+        <p><img {{bind-attr src=imageUrl}} /></p>
+      </article>
+    {{/each}}
   </article>
 </div>

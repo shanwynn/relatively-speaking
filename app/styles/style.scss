@@ -46,6 +46,11 @@ h2 {
   text-shadow: 1px 1px 1px #000;
 }
 
+h3 {
+  margin-left: 50px;
+  font-size: 1em;
+}
+
 p {
   font-size: 2em;
   text-align: center;
@@ -64,7 +69,7 @@ article {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.form-title{
+.form-title {
   font-family: Candara, Optima;
   font-size: 2em;
   color: #000;
@@ -77,7 +82,7 @@ article {
   width: 80%;
 }
 
-.commentsCount{
+.commentsCount {
   font-family: Candara, Optima;
   font-size: 1.5em;
   color: #000;
