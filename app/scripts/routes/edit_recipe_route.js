@@ -1,4 +1,4 @@
-Rs.RecipeEditRoute = Ember.Route.extend({
+Rs.EditRecipeRoute = Ember.Route.extend({
   model: function(params) {
     return this.store.find('recipe', params.id);
   }

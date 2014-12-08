@@ -6,15 +6,18 @@ Rs.Router.map(function () {
 
   this.route('events');
   this.route('new_event', {path: 'event/new'});
+  this.route('edit_event', {path: 'event/:id/edit'});
 
   this.route('bdayanniv');
+
   this.route('contacts');
   this.route('new_contact', {path: 'contact/new'});
+  this.route('edit_contact', {path: 'contact/:id/edit'});
 
   this.route('recipes');
   this.route('recipe', {path: 'recipes/:id'});
-  this.route('recipe_edit', {path: 'recipes/:id/edit'});
   this.route('new_recipe', {path: 'recipes/new'});
+  this.route('edit_recipe', {path: 'recipes/:id/edit'});
   this.route('category', {path: 'categories'});
 
   this.route('feedback');

@@ -1,0 +1,32 @@
+<p>Forgot an ingredient? Sneak it in here.</p>
+
+<div>
+  <article>
+
+      <form role="form">
+         <div class="form-group">
+           <label for='recipeName'>Recipe Name:</label>
+           {{input type='text' value=recipeName id='recipeName' class='form-control'}}
+         </div>
+         <div class="form-group">
+            <label for='category'>Category:</label>
+            {{view "select" value=category content=Rs.CATEGORIES optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control'}}
+         </div>
+         <div class="form-group">
+           <label for='imageURL'>Image (URL):</label>
+           {{input type='text' value=imageURL id='imageURL' class='form-control'}}
+         </div>
+        <div class="form-group">
+          <label for='ingredients'>Ingredients:</label>
+           {{input type='text' value=ingredients id='ingredients' class='form-control'}}
+        </div>
+        <div class ="form-group">
+        <label for='directions'>Directions:</label>
+           {{input type='text' value=directions id='directions' class='form-control'}}
+        </div>
+        <button {{action 'update'}} class='btn btn-primary'>Update Recipe</button>
+        <button {{action 'destroy'}} class='btn btn-danger'>Delete Recipe</button>
+      </form>
+
+  </article>
+</div>

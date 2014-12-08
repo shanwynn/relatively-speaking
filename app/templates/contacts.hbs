@@ -20,6 +20,8 @@
       <h3>{{firstnameChild1}}{{lastnameChild1}}{{birthdateChild1}}</h3>
       <div><img {{bind-attr src=familyphoto}} /></div>
     </div>
+    <h3>{{link-to 'Edit' 'edit_contact' this class='edit-link' classNames='btn btn-primary'}}</h3>
+
     {{/each}}
   </article>
 </div>

@@ -23,6 +23,7 @@
       <ul>
         {{#each direction in splitDirections}}
         <li>{{direction}}</li>
+        <h3>{{link-to 'Edit' 'edit_recipe' this class='edit-link' classNames='btn btn-primary'}}</h3>
         {{/each}}
       </ul>
       {{/if}}
