@@ -1,7 +1,7 @@
 Rs.Router.map(function () {
   this.route('news');
   this.route('new_news', {path: 'news/new'});
-  this.route('news_edit', {path: 'news/:id/edit'});
+  this.route('edit_news', {path: 'news/:id/edit'});
   this.route('new_comment', {path: 'news/:id/new_comment'});
 
   this.route('events');
@@ -9,6 +9,7 @@ Rs.Router.map(function () {
 
   this.route('bdayanniv');
   this.route('contacts');
+  this.route('new_contact', {path: 'contact/new'});
 
   this.route('recipes');
   this.route('recipe', {path: 'recipes/:id'});

@@ -1,4 +1,4 @@
-Rs.RecipesController = Ember.Controller.extend({
+Rs.RecipesController = Ember.ArrayController.extend({
   actions: {
     destroy: function () {
             this.get('model').deleteRecord();

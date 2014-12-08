@@ -1,4 +1,4 @@
-Rs.NewRecipeController = Ember.Controller.extend({
+Rs.NewRecipeController = Ember.ArrayController.extend({
 
   showIngredients: true,
   showDirections: true,

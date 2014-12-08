@@ -1,0 +1,21 @@
+<p>This is a place to share family news. Sharing is caring.</p>
+
+<div>
+  <article>
+  <form role="form">
+     <div class="form-group">
+       <label for='newsTitle'>Headline:</label>
+       {{input type='text' value=newsTitle id='newsTitle' class='form-control'}}
+     </div>
+     <div class="form-group">
+        <label for='newsPost'>What is your news?:</label>
+        {{input type='text' value=newsPost id='newsPost' class='form-control'}}
+     </div>
+     <div class="form-group">
+       <label for='newsimageURL'>Please link photos here:</label>
+       {{input type='text' value=newsimageURL id='newsimageURL' class='form-control'}}
+     </div>
+     <button {{action 'update'}} class='btn btn-primary'>Update News</button>
+  </form>
+  </article>
+</div>

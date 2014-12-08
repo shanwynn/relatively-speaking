@@ -2,13 +2,11 @@
 
 <div>
   <article>
-    {{#each}}
-    <div class='wrapper'>
-      <h2>{{eventTitle}}</h2>
-      <h3>{{eventDate}}</h3>
-      <h3>{{eventTime}}</h3>
-      <p class='text-output'>{{eventPost}}</p>
-    </div>
-    {{/each}}
+  {{#each}}
+    <h2>{{eventTitle}}</h2>
+    <h3>{{eventDate}}</h3>
+    <h3>{{eventTime}}</h3>
+    <p class='text-output'>{{eventPost}}</p>
+  {{/each}}
   </article>
 </div>
