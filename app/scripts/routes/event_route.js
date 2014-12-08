@@ -1,5 +1,5 @@
-Rs.EventRoute = Ember.Route.extend({
-  model: function(params) {
+Rs.EventsRoute = Ember.Route.extend({
+  model: function() {
     return this.store.find('event');
   }
 });

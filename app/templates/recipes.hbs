@@ -1,6 +1,6 @@
 <p>Our family loves to eat. Add a {{link-to "New Recipe" "new_recipe" class='btn btn-primary header-btn'}} for us to try.</p>
 
-<div>
+{{#each}}
   <article>
       <h2>{{recipeName}}</h2>
       <h4 class='category'>{{category}}</h4>
@@ -30,4 +30,4 @@
     </section>
 
   </article>
-</div>
+{{/each}}
