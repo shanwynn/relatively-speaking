@@ -2,13 +2,11 @@
 
 {{#each}}
   <article>
-      <h2>{{recipeName}}</h2>
-      <h4 class='category'>{{category}}</h4>
+      <h2 class="entry-title">{{recipeName}}</h2>
+      <h2 class="contributor">{{contributor}}</h2>
     <section>
       <img {{bind-attr src=imageURL}} class='centered' />
-      <h4 class="add-form"{{action 'toggleIngredients' on 'click'}}>
-        {{ingredientCount}} Ingredients <i {{bind-attr class=':glyphicon showIngredients:glyphicon-chevron-down:glyphicon-chevron-up'}}></i>
-      </h4>
+      <h4 class="add-form">Ingredients:</h4>
       {{#if showIngredients}}
       <ul>
         {{#each ingredient in splitIngredients}}
@@ -16,9 +14,7 @@
         {{/each}}
       </ul>
       {{/if}}
-      <h4 class="add-form" {{action 'toggleDirections' on 'click'}}>
-        {{directionCount}} Directions <i {{bind-attr class=':glyphicon showDirections:glyphicon-chevron-down:glyphicon-chevron-up'}}></i>
-      </h4>
+      <h4 class="add-form">Directions:</h4>
       {{#if showDirections}}
       <ul>
         {{#each direction in splitDirections}}

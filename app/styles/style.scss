@@ -102,6 +102,23 @@ article {
   text-shadow: none;
 }
 
+.contributor {
+  font-family: Palatino, Candara, Optima;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #720024;
+  text-align: center;
+  text-shadow: none;
+  margin: 0 auto 0 auto;
+  width: 70%;
+}
+
+.text-output {
+  font-size: 1.5em;
+  margin: 20px auto 0 auto;
+  width: 80%;
+}
+
 .date-text {
   float: right;
   margin-top: -20px;
