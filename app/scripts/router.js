@@ -19,6 +19,7 @@ Rs.Router.map(function () {
 
   this.route('feedback');
   this.route('new_feedback', {path: 'feedback/new'});
+  this.route('edit_feedback', {path: 'feedback/:id/edit'});
 
   this.route ('login', {path: 'login'});
 });

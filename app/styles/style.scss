@@ -183,7 +183,7 @@ img {
 }
 
 .btn-primary {
-  margin-top: -5px;
+  margin-top: 5px;
   background-color: #10206F;
   border: #10206F;
   color: #fff;
@@ -191,7 +191,7 @@ img {
 }
 
 .btn-primary:hover {
-  margin-top: -5px;
+  margin-top: 5px;
   background-color: #2845D2;
   border: #2845D2;
   color: #fff;
@@ -199,22 +199,24 @@ img {
 }
 
 .header-btn {
+  margin-top: -3px;
   font-size: .75em;
 }
 
 .header-btn:hover {
+  margin-top: -3px;
   font-size: .75em;
 }
 
 .btn-danger {
-  margin-top: -5px;
+  margin-top: 5px;
   background-color: #930C0A;
   border: #930C0A;
   font-size: 1em;
 }
 
 .btn-danger:hover {
-  margin-top: -5px;
+  margin-top: 5px;
   background-color: #6E0012;
   border: #930C0A;
   font-size: 1em;
