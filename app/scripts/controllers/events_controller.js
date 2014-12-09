@@ -1,4 +1,6 @@
 Rs.EventsController = Ember.ArrayController.extend({
+  sortProperties: ['eventDate'],
+  sortAscending: true,
   actions: {
       destroy: function () {
               this.get('model').deleteRecord();

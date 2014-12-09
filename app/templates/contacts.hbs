@@ -5,23 +5,21 @@
     {{#each}}
     <div class='wrapper'>
       <h2 class='entry-title'>{{firstname}} {{lastname}}</h2>
-      <h3>Birthday: {{birthdate}}</h3>
+      <h3 class= "contact-info">{{birthdate}}</h3>
+      <h2 class='entry-title'>{{firstnameSpouse}} {{lastnameSpouse}}</h3>
+      <h3 class="contact-info">{{birthdateSpouse}}</h3>
+      <h3 class="contact-info">{{anniversary}}</h3>
       <p class='text-output'>{{address}}</p>
-      <h3>Phone: {{phone}}</h3>
-      <h3>Email: {{email}}</h3>
-      <h3>Web: {{webaddress}}</h3>
-      <h3>Spouse: {{firstnameSpouse}} {{lastnameSpouse}}</h3>
-      <h3>Birthday: {{birthdateSpouse}}</h3>
-      <h3>Anniversary: {{anniversary}}</h3>
-      <h3>Children:</h3>
-      <h3>{{firstnameChild1}}{{lastnameChild1}}{{birthdateChild1}}</h3>
-      <h3>{{firstnameChild2}}{{lastnameChild2}}{{birthdateChild2}}</h3>
-      <h3>{{firstnameChild3}}{{lastnameChild3}}{{birthdateChild3}}</h3>
-      <h3>{{firstnameChild4}}{{lastnameChild4}}{{birthdateChild4}}</h3>
+      <h3 class="contact-info">{{phone}}</h3>
+      <h3 class="contact-info">{{email}}</h3>
+      <h3 class="contact-info">{{webaddress}}</h3>
+      <h3 class="contact-info">{{firstnameChild1}} {{lastnameChild1}}  {{birthdateChild1}}</h3>
+      <h3 class="contact-info">{{firstnameChild2}} {{lastnameChild2}}  {{birthdateChild2}}</h3>
+      <h3 class="contact-info">{{firstnameChild3}} {{lastnameChild3}}  {{birthdateChild3}}</h3>
+      <h3 class="contact-info">{{firstnameChild4}} {{lastnameChild4}}  {{birthdateChild4}}</h3>
       <div><img {{bind-attr src=familyphoto}} /></div>
+      <h3>{{link-to 'Edit' 'edit_contact' this class='edit-link' classNames='btn btn-default'}}</h3>
     </div>
-    <h3>{{link-to 'Edit' 'edit_contact' this class='edit-link' classNames='btn btn-primary'}}</h3>
-
     {{/each}}
   </article>
 </div>
