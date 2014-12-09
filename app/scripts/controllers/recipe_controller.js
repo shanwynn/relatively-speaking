@@ -1,6 +1,6 @@
 Rs.RecipeController = Ember.ObjectController.extend({
   needs: ['application'],
-
+  
   showIngredients: true,
   showDirections: true,
 
