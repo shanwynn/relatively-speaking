@@ -1,21 +1,21 @@
-<p>Step 1. Tell us a little bit about yourself.</p>
+<p>Tell us a little bit about yourself.</p>
 
 <div>
   <article>
   <form role="form">
-     <div class="form-group-contacts">
+    <div class="form-group-contacts">
        <label for='firstname'>First Name:</label>
        {{input type='text' value=firstname id='firstname' classNames='form-control fullname'}}
        <label for='lastname'>Last Name:</label>
        {{input type='text' value=lastname id='lastname' classNames='form-control fullname'}}
-     </div>
+    </div>
 
-     <div class="form-group-contacts">
+    <div class="form-group-contacts">
        <label for='address'>Address:</label>
        {{textarea value=address id='address' classNames='form-control mailingaddress' rows='5'}}
-     </div>
+    </div>
 
-     <div class="form-group-contacts">
+    <div class="form-group-contacts">
        <label for='phone'>Phone:</label>
        {{input type='tel' value=phone id='phone' classNames='form-control contact-methods'}}
       <label for='email'>Email:</label>
@@ -38,27 +38,31 @@
 
     <div class ="form-group-contacts">
       <label for='firstnameChild1'>Child's First Name:</label>
-       {{input type='text' value=firstnameChild1 id='firstnameChild1' class='form-control child-info'}}
-    <label for='lastnameChild1'>Last Name:</label>
-     {{input type='text' value=lastnameChild1 id='lastnameChild1' class='form-control child-info'}}
+      {{input type='text' value=firstnameChild1 id='firstnameChild1' class='form-control fullname'}}
+      <label for='lastnameChild1'>Last Name:</label>
+      {{input type='text' value=lastnameChild1 id='lastnameChild1' class='form-control fullname'}}
+    </div>
 
     <div class ="form-group-contacts">
-    <label for='firstnameChild2'>Child's First Name:</label>
-     {{input type='text' value=firstnameChild2 id='firstnameChild2' class='form-control child-info'}}
-     <label for='lastnameChild2'>Last Name:</label>
-      {{input type='text' value=lastnameChild2 id='lastnameChild2' class='form-control child-info'}}
+      <label for='firstnameChild2'>Child's First Name:</label>
+      {{input type='text' value=firstnameChild2 id='firstnameChild2' class='form-control fullname'}}
+      <label for='lastnameChild2'>Last Name:</label>
+      {{input type='text' value=lastnameChild2 id='lastnameChild2' class='form-control fullname'}}
+    </div>
 
     <div class ="form-group-contacts">
-    <label for='firstnameChild3'>Child's First Name:</label>
-     {{input type='text' value=firstnameChild3 id='firstnameChild3' class='form-control child-info'}}
-     <label for='lastnameChild3'>Last Name:</label>
-      {{input type='text' value=lastnameChild3 id='lastnameChild3' class='form-control child-info'}}
+      <label for='firstnameChild3'>Child's First Name:</label>
+      {{input type='text' value=firstnameChild3 id='firstnameChild3' class='form-control fullname'}}
+      <label for='lastnameChild3'>Last Name:</label>
+      {{input type='text' value=lastnameChild3 id='lastnameChild3' class='form-control fullname'}}
+    </div>
 
     <div class ="form-group-contacts">
-     <label for='firstnameChild4'>Child's First Name:</label>
-      {{input type='text' value=firstnameChild4 id='firstnameChild4' class='form-control child-info'}}
-    <label for='lastnameChild4'>Last Name:</label>
-     {{input type='text' value=lastnameChild4 id='lastnameChild4' class='form-control child-info'}}
+      <label for='firstnameChild4'>Child's First Name:</label>
+      {{input type='text' value=firstnameChild4 id='firstnameChild4' class='form-control fullname'}}
+      <label for='lastnameChild4'>Last Name:</label>
+      {{input type='text' value=lastnameChild4 id='lastnameChild4' class='form-control fullname'}}
+    </div>
 
       <button class='btn btn-primary' {{action 'save'}}>Add Contact Info</button>
   </form>
