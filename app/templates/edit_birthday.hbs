@@ -1,0 +1,19 @@
+<p>Make changes to your information here.</p>
+
+<div>
+  <article>
+  <form role="form">
+     <div class="form-group">
+       <label for='fullname'>Name:</label>
+       {{input type='text' value=fullname id='fullname' class='form-control'}}
+     </div>
+     <div class="form-group">
+       <label for='birthday'>Birthday:</label>
+       {{input type='date' value=birthday id='birthday' class='form-control'}}
+     </div>
+     
+     <button {{action 'update'}} class='btn btn-primary'>Update Dates</button>
+     <button {{action 'destroy'}} class='btn btn-danger'>Delete Dates</button>
+  </form>
+  </article>
+</div>

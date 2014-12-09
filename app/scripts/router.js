@@ -8,17 +8,21 @@ Rs.Router.map(function () {
   this.route('new_event', {path: 'event/new'});
   this.route('edit_event', {path: 'event/:id/edit'});
 
-  this.route('bdayanniv');
+  this.route('birthdays');
+  this.route('new_birthday', {path: 'birthday/new'});
+  this.route('edit_birthday', {path: 'birthday/:id/edit'});
+
+  this.route('anniversaries');
+  this.route('new_anniversary', {path: 'anniversaries/new'});
+  this.route('edit_anniversary', {path: 'anniversaries/:id/edit'});
 
   this.route('contacts');
   this.route('new_contact', {path: 'contact/new'});
   this.route('edit_contact', {path: 'contact/:id/edit'});
 
   this.route('recipes');
-  this.route('recipe', {path: 'recipes/:id'});
   this.route('new_recipe', {path: 'recipes/new'});
   this.route('edit_recipe', {path: 'recipes/:id/edit'});
-  this.route('category', {path: 'categories'});
 
   this.route('feedback');
   this.route('new_feedback', {path: 'feedback/new'});

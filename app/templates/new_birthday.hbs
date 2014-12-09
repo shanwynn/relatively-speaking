@@ -1,0 +1,18 @@
+<p>We want to help you celebrate the birthdays in your family.</p>
+
+<div>
+  <article>
+  <form role="form">
+     <div class="form-group">
+       <label for='fullname'>Name:</label>
+       {{input type='text' value=fullname id='fullname' class='form-control'}}
+     </div>
+     <div class="form-group">
+       <label for='birthday'>Birthday:</label>
+       {{input type='date' value=birthday id='birthday' class='form-control'}}
+     </div>
+
+     <button class='btn btn-primary' {{action 'save'}}>Add Birthday</button>
+  </form>
+  </article>
+</div>

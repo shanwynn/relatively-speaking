@@ -99,6 +99,7 @@ article {
   font-family: Candara, Optima;
   font-size: 2em;
   color: #000;
+  margin: 20px auto 0 auto;
   text-shadow: none;
 }
 
@@ -259,7 +260,7 @@ img {
 
 .navbar {
   display: inline-block;
-  margin: 0 20px 0 20px;
+  margin: 0 27px 0 27px;
   list-style: none;
   font-family: Candara, Optima;
   font-size: 1.5em;
@@ -290,4 +291,22 @@ img {
   text-align: center;
   color: #F2D3BA;
   text-decoration: none;
+}
+
+
+/* Media Queries */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+.navbar {
+  display: none;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
 }

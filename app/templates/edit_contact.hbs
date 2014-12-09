@@ -11,11 +11,6 @@
      </div>
 
      <div class="form-group-contacts">
-       <label for='birthdate'>Birthdate:</label>
-       {{input type='date' value=birthdate id='birthdate' classNames='form-control birthday'}}
-     </div>
-
-     <div class="form-group-contacts">
        <label for='address'>Address:</label>
        {{textarea value=address id='address' classNames='form-control mailingaddress' rows='5'}}
      </div>
@@ -34,13 +29,6 @@
        {{input type='text' value=familyphoto id='familyphoto' classNames='form-control weblinks'}}
     </div>
 
-    <div class="form-group-contacts">
-       <label for='spouse'>Are you currently married?:</label>
-       {{view "select" value=spouse content=Rs.FORMWIZARD optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control statuses'}}
-       <label for='children'>Do you have children in your household?:</label>
-       {{view "select" value=children content=Rs.FORMWIZARD optionValuePath="content.id" optionLabelPath="content.name" classNames='form-control statuses'}}
-    </div>
-
     <div class ="form-group-contacts">
       <label for='firstnameSpouse'>Spouse's First Name:</label>
        {{input type='text' value=firstnameSpouse id='firstnameSpouse' classNames='form-control fullname'}}
@@ -49,48 +37,29 @@
     </div>
 
     <div class ="form-group-contacts">
-      <label for='birthdateSpouse'>Spouse's Birthdate:</label>
-       {{input type='date' value=birthdateSpouse id='birthdateSpouse' classNames='form-control birthday'}}
-      <label for='anniversary'>Anniversary:</label>
-       {{input type='date' value=anniversary id='anniversary' classNames='form-control birthday'}}
-    </div>
-
-    <div class ="form-group-contacts">
       <label for='firstnameChild1'>Child's First Name:</label>
        {{input type='text' value=firstnameChild1 id='firstnameChild1' class='form-control child-info'}}
     <label for='lastnameChild1'>Last Name:</label>
      {{input type='text' value=lastnameChild1 id='lastnameChild1' class='form-control child-info'}}
-     <label for='birthdateChild1'>Birthdate:</label>
-      {{input type='date' value=birthdateChild1 id='birthdateChild1' class='form-control childbirthdate'}}
-    </div>
 
     <div class ="form-group-contacts">
     <label for='firstnameChild2'>Child's First Name:</label>
      {{input type='text' value=firstnameChild2 id='firstnameChild2' class='form-control child-info'}}
      <label for='lastnameChild2'>Last Name:</label>
       {{input type='text' value=lastnameChild2 id='lastnameChild2' class='form-control child-info'}}
-     <label for='birthdateChild2'>Birthdate:</label>
-      {{input type='date' value=birthdateChild2 id='birthdateChild2' class='form-control childbirthdate'}}
-    </div>
 
     <div class ="form-group-contacts">
     <label for='firstnameChild3'>Child's First Name:</label>
      {{input type='text' value=firstnameChild3 id='firstnameChild3' class='form-control child-info'}}
      <label for='lastnameChild3'>Last Name:</label>
       {{input type='text' value=lastnameChild3 id='lastnameChild3' class='form-control child-info'}}
-     <label for='birthdateChild3'>Birthdate:</label>
-      {{input type='date' value=birthdateChild3 id='birthdateChild3' class='form-control childbirthdate'}}
-    </div>
-
 
     <div class ="form-group-contacts">
      <label for='firstnameChild4'>Child's First Name:</label>
       {{input type='text' value=firstnameChild4 id='firstnameChild4' class='form-control child-info'}}
     <label for='lastnameChild4'>Last Name:</label>
      {{input type='text' value=lastnameChild4 id='lastnameChild4' class='form-control child-info'}}
-     <label for='birthdateChild4'>Birthdate:</label>
-      {{input type='date' value=birthdateChild4 id='birthdateChild4' class='form-control childbirthdate'}}
-    </div>
+
       <button {{action 'update'}} class='btn btn-primary'>Update Profile</button>
       <button {{action 'destroy'}} class='btn btn-danger'>Delete Profile</button>
   </form>
