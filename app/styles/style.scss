@@ -1,5 +1,7 @@
 $icon-font-path: "../styles/fonts/"; // Change the path to the fonts
 $banner-font:'Dancing Script', script;
+$section-head-font: 'Candara', 'Optima';
+$title-font: 'Palatino', 'Candara', 'Optima';
 @import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
 
 @mixin border-radius($radius) {
@@ -39,7 +41,7 @@ html, body {
 
 h2 {
   margin-top: -55px;
-  font-family: Candara, Optima;
+  font-family: $section-head-font;
   font-size: 2.5em;
   text-align: center;
   color: #fff;
@@ -88,7 +90,7 @@ article {
 }
 
 .entry-title {
-  font-family: Palatino, Candara, Optima;
+  font-family: $title-font;
   font-size: 2em;
   font-weight: bold;
   color: #10206F;
@@ -99,7 +101,7 @@ article {
 }
 
 .section-title {
-  font-family: Candara, Optima;
+  font-family: $section-head-font;
   font-size: 2.25em;
   text-transform: uppercase;
   font-weight: bold;
@@ -109,7 +111,7 @@ article {
 }
 
 .contributor {
-  font-family: Palatino, Candara, Optima;
+  font-family: $title-font;
   font-size: 1.5em;
   font-weight: bold;
   color: #720024;
@@ -299,7 +301,7 @@ img {
   display: inline-block;
   margin: 0 27px 0 27px;
   list-style: none;
-  font-family: Candara, Optima;
+  font-family: $section-head-font;
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
@@ -310,7 +312,7 @@ img {
   display: inline-block;
   margin: 0 20px 0 20px;
   list-style: none;
-  font-family: Candara, Optima;
+  font-family: $section-head-font;
   font-size: 1.0em;
   font-weight: bold;
   text-align: center;
@@ -322,7 +324,7 @@ img {
   display: inline-block;
   margin: 0 20px 0 20px;
   list-style: none;
-  font-family: Candara, Optima;
+  font-family: $section-head-font;
   font-size: 1.0em;
   font-weight: bold;
   text-align: center;
@@ -410,7 +412,7 @@ and (max-device-width : 1024px) {
   }
 
   .navbar {
-    width: 100;
+    width: 100%;
     display: inline-block;
     float: left;
     margin: 5px 5px 0 5px;
