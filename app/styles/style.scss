@@ -140,8 +140,56 @@ article {
   width: 90%;
 }
 
-.form-group-contacts {
-  margin-left: 10px;
+.form-group-1 {
+  margin-left: 45px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-2 {
+  margin-left: 45px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-3 {
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-4 {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-5 {
+  margin-left: 5px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-6 {
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-7 {
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-8 {
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.form-group-9 {
+  margin-left: 20px;
   margin-top: 30px;
   width: 90%;
 }
@@ -277,17 +325,6 @@ img {
   text-decoration: none;
 }
 
-footer {
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0;
-  position: relative;
-	width: 100%;
-  height: 30px;
-  padding: 5px;
-}
-
 a {
   text-decoration: none;
   font-weight: bold;
@@ -299,20 +336,86 @@ a:hover {
   color: #545351;
 }
 
+footer {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+}
 
 /* Media Queries */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-.navbar {
-  display: none;
-}
+
+  body {
+    font-size: .75em;
+  }
+  
+  #banner {
+    width: 100%;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: .75em;
+  }
+
+  .navbar {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 0;
+    list-style: none;
+    font-family: Candara, Optima;
+    font-size: .5em;
+    font-weight: bold;
+    text-align: center;
+    color: #EDE5F0;
+  }
+
+
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
-/* Styles */
+
+  #banner {
+    width: 100%;
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .navbar {
+    width: 100;
+    display: inline-block;
+    float: left;
+    margin: 5px 15px 0 15px;
+    list-style: none;
+    font-family: Candara, Optima;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #EDE5F0;
+  }
+
+
 }

@@ -1,14 +1,12 @@
 <p>Help us celebrate your birthday, {{link-to "Add Birthday" "new_birthday" class='btn btn-primary header-btn'}} info for everyone.</p>
 
-<section>
-  <article>
+<article>
   <h2 class="section-title">Birthdays</h2>
   {{#each}}
-      <div class='wrapper'>
-      <h2 class='entry-title'>{{fullname}}</h2>
-      <h3 class='contact-info'>{{formattedBirthday}}</h3>
-      <h3>{{link-to 'Edit' 'edit_birthday' this class='edit-link' classNames='btn btn-default'}}</h3>
-      </div>
+  <div class='wrapper'>
+    <h2 class='entry-title'>{{fullname}}</h2>
+    <h3 class='contact-info'>{{formattedBirthday}}</h3>
+    <h3>{{link-to 'Edit' 'edit_birthday' this class='edit-link' classNames='btn btn-default'}}</h3>
+  </div>
   {{/each}}
-  </article>
-</section>
+</article>

@@ -1,14 +1,12 @@
 <p>Celebrating wedded bliss? {{link-to "Add Anniversary" "new_anniversary" class='btn btn-primary header-btn'}} information.</p>
 
-<section>
-  <article>
+<article>
   <h2 class="section-title">Anniversaries</h2>
   {{#each}}
-      <div class='wrapper'>
-      <h3 class='entry-title'>{{yourname}} and {{spousename}}</h3>
-      <h3 class='contact-info'>{{formattedAnniversary}}</h3>
-      <h3>{{link-to 'Edit' 'edit_anniversary' this class='edit-link' classNames='btn btn-default'}}</h3>
-      </div>
+  <div class='wrapper'>
+    <h3 class='entry-title'>{{yourname}} and {{spousename}}</h3>
+    <h3 class='contact-info'>{{formattedAnniversary}}</h3>
+    <h3>{{link-to 'Edit' 'edit_anniversary' this class='edit-link' classNames='btn btn-default'}}</h3>
+  </div>
   {{/each}}
-  </article>
-</section>
+</article>

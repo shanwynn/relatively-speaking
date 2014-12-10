@@ -1,15 +1,14 @@
 <p>Let's all get together! Create a {{link-to "New Event" "new_event" class='btn btn-primary header-btn'}} right here.</p>
 
-<section>
-  <article>
-    <h2 class="section-title">Events</h2>
-    {{#each}}
-    <div class='wrapper'>
-      <h2 class='entry-title'>{{eventTitle}}</h2>
-      <h3>Event Date and Time: {{formattedEvent}}</h3>
-      <h3>{{eventPost}}</h3>
-      <h3>{{link-to 'Edit' 'edit_event' this class='edit-link' classNames='btn btn-default'}}</h3>
-    </div>
-    {{/each}}
-  </article>
-</section>
+<article>
+  <h2 class="section-title">Events</h2>
+  {{#each}}
+  <div class='wrapper'>
+    <h2 class='entry-title'>{{eventTitle}}</h2>
+    <h3>Event Date and Time: {{formattedEvent}}</h3>
+    <h3>{{eventPost}}</h3>
+
+    <h3>{{link-to 'Edit' 'edit_event' this class='edit-link' classNames='btn btn-default'}}</h3>
+  </div>
+  {{/each}}
+</article>

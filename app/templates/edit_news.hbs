@@ -1,7 +1,6 @@
 <p>Make changes to news posts below.</p>
 
-<div>
-  <article>
+<article>
   <form role="form">
      <div class="form-group">
        <label for='newsTitle'>Headline:</label>
@@ -15,8 +14,8 @@
        <label for='newsimageURL'>Please link photos here:</label>
        {{input type='text' value=newsimageURL id='newsimageURL' class='form-control'}}
      </div>
+
      <button {{action 'update'}} class='btn btn-primary'>Update News</button>
      <button {{action 'destroy'}} class='btn btn-danger'>Delete News</button>
   </form>
-  </article>
-</div>
+</article>

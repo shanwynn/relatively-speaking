@@ -1,12 +1,11 @@
 <p>Please enter your email address and password for full access.</p>
 
-<div>
-  <article>
-    <section="login-screen">
-    <h4>{{error}}</h4>
-    {{input type='email' value=username placeholder='email' class='login-form'}}
-    {{input type='password' value=password placeholder='password' class='login-form'}}
-    <button {{action 'login'}} class='btn btn-primary'>Login</button>
-    </section>
-  </article>
-</div>
+<article>
+  <section="login-screen">
+  <h4>{{error}}</h4>
+  {{input type='email' value=username placeholder='email' class='login-form'}}
+  {{input type='password' value=password placeholder='password' class='login-form'}}
+
+  <button {{action 'login'}} class='btn btn-primary'>Login</button>
+  </section>
+</article>

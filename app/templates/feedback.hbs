@@ -1,15 +1,14 @@
 <p>Feedback is welcome, feel free to create a {{link-to "New Comment" "new_feedback" class='btn btn-primary header-btn'}}.</p>
 
-<div>
-  <article>
-    <h2 class="section-title">Feedback</h2>
-    {{#each}}
-    <div class='wrapper'>
-      <h3>{{text}}</h3>
-      <h3>{{name}}</h3>
-      <h4 class="date-text">{{date}}</h4>
-      <h3>{{link-to 'Edit' 'edit_feedback' this class='edit-link' classNames='btn btn-default'}}</h3>
-    {{/each}}
-    </div>
-  </article>
-</div>
+<article>
+  <h2 class="section-title">Feedback</h2>
+  {{#each}}
+  <div class='wrapper'>
+    <h3>{{text}}</h3>
+    <h3>{{name}}</h3>
+    <h4 class="date-text">{{date}}</h4>
+
+    <h3>{{link-to 'Edit' 'edit_feedback' this class='edit-link' classNames='btn btn-default'}}</h3>
+  </div>
+  {{/each}}
+</article>

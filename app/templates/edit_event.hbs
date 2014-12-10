@@ -1,7 +1,6 @@
 <p>Change of plans? Just edit the event here.</p>
 
-<div>
-  <article>
+<article>
   <form role="form">
      <div class="form-group">
        <label for='eventTitle'>Event:</label>
@@ -15,8 +14,8 @@
        <label for='eventPost'>Event Details:</label>
        {{input type='text' value=eventPost id='eventPost' class='form-control'}}
      </div>
+
      <button {{action 'update'}} class='btn btn-primary'>Update Event</button>
      <button {{action 'destroy'}} class='btn btn-danger'>Delete Event</button>
   </form>
-  </article>
-</div>
+</article>

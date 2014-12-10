@@ -1,7 +1,6 @@
 <p>This is a place to share family news. Sharing is caring.</p>
 
-<div>
-  <article>
+<article>
   <form role="form">
      <div class="form-group">
        <label for='newsTitle'>Headline:</label>
@@ -15,7 +14,7 @@
        <label for='newsimageURL'>Please link photos here:</label>
        {{input type='text' value=newsimageURL id='newsimageURL' class='form-control'}}
      </div>
+
      <button class='btn btn-primary' {{action 'save'}}>Post News</button>
   </form>
-  </article>
-</div>
+</article>

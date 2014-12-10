@@ -1,22 +1,23 @@
 <p>Make changes to your information here.</p>
 
-<div>
-  <article>
+<article>
   <form role="form">
      <div class="form-group">
        <label for='yourname'>Your Name:</label>
        {{input type='text' value=yourname id='yourname' class='form-control'}}
      </div>
+
      <div class="form-group">
        <label for='spousename'>Spouse's Name:</label>
        {{input type='text' value=spousename id='spousename' class='form-control'}}
      </div>
+     
      <div class="form-group">
        <label for='anniversary'>Anniversary Date:</label>
        {{input type='date' value=anniversary id='anniversary' class='form-control'}}
      </div>
+
      <button {{action 'update'}} class='btn btn-primary'>Update Anniversary</button>
      <button {{action 'destroy'}} class='btn btn-danger'>Delete Anniversary</button>
   </form>
-  </article>
-</div>
+</article>
