@@ -2,14 +2,15 @@
 </p>
 
 <div>
+  {{#each}}
   <article>
-    {{#each}}
+    <h2 class="section-title">News</h2>
     <div class='wrapper'>
       <h2 class='entry-title'>{{newsTitle}}</h2>
       <h3 class='news-output'>{{newsPost}}</h3>
       <div><img {{bind-attr src=newsimageURL}} /></div>
       <h3>{{link-to 'Edit' 'edit_news' this class='edit-link' classNames='btn btn-default'}}</h3>
     </div>
-    {{/each}}
   </article>
+  {{/each}}
 </div>

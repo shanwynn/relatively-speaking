@@ -1,20 +1,21 @@
 <p>Our family loves to eat. Add a {{link-to "New Recipe" "new_recipe" class='btn btn-primary header-btn'}} for us to try.</p>
 
-{{#each}}
+
   <article>
+    <h2 class="section-title">Recipes</h2>
+    {{#each}}
     <div class='wrapper'>
       <h2 class="entry-title">{{recipeName}}</h2>
       <h2 class="contributor">{{contributor}}</h2>
     <section>
       <img {{bind-attr src=imageURL}} class='centered' />
-      <h4 class="add-form">
-         Ingredients </h4>
+      <h4 class="add-form">Ingredients</h4>
       <ul>
         {{#each ingredient in splitIngredients}}
         <li>{{ingredient}}</li>
         {{/each}}
       </ul>
-      <h4 class="add-form">Directions </h4>
+      <h4 class="add-form">Directions</h4>
 
       <ul>
         {{#each direction in splitDirections}}
@@ -24,6 +25,6 @@
 
       <h3>{{link-to 'Edit' 'edit_recipe' this class='edit-link' classNames='btn btn-default'}}</h3>
     </section>
-  </div>
+    </div>
+    {{/each}}
   </article>
-{{/each}}

@@ -8,8 +8,7 @@ Rs.NewEventController = Ember.Controller.extend({
 
             var eventRecord = this.store.createRecord('event', {
               eventTitle:    this.get('eventTitle'),
-              eventDate:     (Date()).toDateString(),
-              eventTime:     this.get('eventTime'),
+              eventDate:     this.get('eventDate'),
               eventPost:     this.get('eventPost'),
             });
             eventRecord.save();
