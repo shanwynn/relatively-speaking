@@ -2,7 +2,6 @@ Rs.Router.map(function () {
   this.route('news');
   this.route('new_news', {path: 'news/new'});
   this.route('edit_news', {path: 'news/:id/edit'});
-  this.route('new_comment', {path: 'news/:id/new_comment'});
 
   this.route('events');
   this.route('new_event', {path: 'event/new'});
