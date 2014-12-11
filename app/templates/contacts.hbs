@@ -6,14 +6,15 @@
   <div class='wrapper'>
     <h2 class='entry-title'>{{firstname}} {{lastname}}</h2>
     <h2 class='entry-title'>{{firstnameSpouse}} {{lastnameSpouse}}</h3>
+    <h2 class="contributor">{{firstnameChild1}} {{lastnameChild1}}</h2>
+    <h2 class="contributor">{{firstnameChild2}} {{lastnameChild2}}</h2>
+    <h2 class="contributor">{{firstnameChild3}} {{lastnameChild3}}</h2>
+    <h2 class="contributor">{{firstnameChild4}} {{lastnameChild4}}</h2>
     <p class='text-output'>{{address}}</p>
     <h3 class="contact-info">{{phone}}</h3>
     <h3 class="contact-info">{{email}}</h3>
     <h3 class="contact-info">{{webaddress}}</h3>
-    <h3 class="contact-info">{{firstnameChild1}} {{lastnameChild1}}</h3>
-    <h3 class="contact-info">{{firstnameChild2}} {{lastnameChild2}}</h3>
-    <h3 class="contact-info">{{firstnameChild3}} {{lastnameChild3}}</h3>
-    <h3 class="contact-info">{{firstnameChild4}} {{lastnameChild4}}</h3>
+
     <div><img {{bind-attr src=familyphoto}} /></div>
 
     <h3>{{link-to 'Edit' 'edit_contact' this class='edit-link' classNames='btn btn-default'}}</h3>
